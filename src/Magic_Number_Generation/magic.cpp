@@ -1,4 +1,4 @@
-#include "Headers\magic.hpp"
+#include "..\Headers\magic.hpp"
 
 
 U64 Magic::get_random_U64_number()

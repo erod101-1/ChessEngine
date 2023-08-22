@@ -1,4 +1,4 @@
-#include "Headers\pawn_attacks.hpp"
+#include "..\Headers\pawn_attacks.hpp"
 
 
 U64 PawnAttacks::mask_pawn_attacks(int square, int side)

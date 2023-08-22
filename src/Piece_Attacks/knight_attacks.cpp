@@ -1,4 +1,4 @@
-#include "Headers\knight_attacks.hpp"
+#include "..\Headers\knight_attacks.hpp"
 
 U64 KnightAttacks::mask_knight_attacks(int square)
 {

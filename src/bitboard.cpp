@@ -1,7 +1,7 @@
 #include "Headers\bitboard.hpp"
 
 
-void BitboardFuncs::printBoard(U64 bitBoard)
+void BitboardFuncs::print_bit_board(U64 bitBoard)
 {
 	for (int rank = 0; rank < 8; rank++)
 	{

@@ -1,5 +1,5 @@
 
-#include "Headers\bishop_attacks.hpp"
+#include "..\Headers\bishop_attacks.hpp"
 
 U64 BishopAttacks::mask_bishop_attacks(int square)
 {

@@ -27,7 +27,7 @@ struct PieceEncoding {
 		{'R', R},
 		{'Q', Q},
 		{'K' ,K},
-		{'p', P},
+		{'p', p},
 		{'n', n},
 		{'b', b},
 		{'r', r},
@@ -77,7 +77,7 @@ namespace BitboardFuncs
 		getBit(bitBoard, square) ? (bitBoard ^= 1ULL << square) : 0;
 	}
 
-	void printBoard(U64 bitBoard);
+	void print_bit_board(U64 bitBoard);
 
 	static int count_bits(U64 bitboard) {
 		int count = 0;

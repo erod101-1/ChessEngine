@@ -1,5 +1,29 @@
-#include "Headers\sliders.hpp"
+#include "..\Headers\sliders.hpp"
 
+U64 QueenAttacks::get_queen_attacks(int square, U64 occupancy)
+{
+	U64 result = 0ULL;
+
+	U64 rook_occupancy = occupancy;
+	U64 bishop_occupancy = occupancy;
+
+
+	//bishop attacks
+	bishop_occupancy &= BishopAttacks::bishop_masks[square];
+	bishop_occupancy *= PieceMagicNumbers::bishop_magic_numbers[square];
+	bishop_occupancy >>= 64 - NumMovesLookUp::bishop_relevant_bits[square];
+
+	result = BishopAttacks::bishop_attacks[square][bishop_occupancy];
+
+	//rook attacks
+	rook_occupancy &= RookAttacks::rook_masks[square];
+	rook_occupancy *= PieceMagicNumbers::rook_magic_numbers[square];
+	rook_occupancy >>= 64 - NumMovesLookUp::rook_relevant_bits[square];
+
+	result |= RookAttacks::rook_attacks[square][rook_occupancy];
+	
+	return result; //queen attack table
+}
 void Sliders::init_slider_attacks(int bishop)
 {
 	for (int square = 0; square < 64; square++)

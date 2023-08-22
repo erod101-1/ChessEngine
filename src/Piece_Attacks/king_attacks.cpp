@@ -1,4 +1,4 @@
-#include "Headers\king_attacks.hpp"
+#include "..\Headers\king_attacks.hpp"
 
 U64 KingAttacks::mask_king_attacks(int square)
 {

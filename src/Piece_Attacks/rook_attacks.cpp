@@ -1,5 +1,5 @@
 
-#include "Headers\rook_attacks.hpp"
+#include "..\Headers\rook_attacks.hpp"
 
 U64 RookAttacks::mask_rook_attacks(int square)
 {

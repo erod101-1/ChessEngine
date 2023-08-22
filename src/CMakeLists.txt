@@ -12,6 +12,6 @@ file(GLOB SOURCES "src/*.cpp")
 
 
 # Add source to this project's executable.
-add_executable (BitBoardChessEngine "main.cpp"  "Headers/bitboard.hpp" "bitboard.cpp" "Headers/pawn_attacks.hpp" "pawn_attacks.cpp" "Headers/knight_attacks.hpp" "knight_attacks.cpp" "Headers/king_attacks.hpp" "king_attacks.cpp" "Headers/bishop_attacks.hpp" "bishop_attacks.cpp" "Headers/rook_attacks.hpp" "rook_attacks.cpp" "Headers/magic.hpp" "magic.cpp" "Headers/sliders.hpp" "sliders.cpp" "Headers/piece_bitboard.hpp" "piece_bitboard.cpp")
+add_executable (BitBoardChessEngine "main.cpp"  "Headers/bitboard.hpp" "bitboard.cpp" "Headers/pawn_attacks.hpp" "Piece_Attacks/pawn_attacks.cpp" "Headers/knight_attacks.hpp" "Piece_Attacks/knight_attacks.cpp" "Headers/king_attacks.hpp" "Piece_Attacks/king_attacks.cpp" "Headers/bishop_attacks.hpp" "Piece_Attacks/bishop_attacks.cpp" "Headers/rook_attacks.hpp" "Piece_Attacks/rook_attacks.cpp" "Headers/magic.hpp" "Magic_Number_Generation/magic.cpp" "Headers/sliders.hpp" "Piece_Attacks/sliders.cpp" "Headers/game.hpp" "game.cpp")
 
 # TODO: Add tests and install targets if needed.
